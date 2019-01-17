@@ -451,7 +451,7 @@
             "type": "table"
           },
           {
-            "content": "<br />\n<br />\n<center>\n<img src=\"public/img/grafana_icon.svg\"  style=\"height: 60px;\">\n<span style=\"color: red;font-size:3rem;line-height: 2rem;\">💖</span>\n<img src=\"public/app/plugins/datasource/prometheus/img/prometheus_logo.svg\" alt=\"Prometheus logo\" style=\"height: 60px;\">\n</center>",
+            "content": "<br />\n<br />\n<center>\n<img src=\"public/img/home-san-icon.png\"  style=\"height: 60px;\">\n<span style=\"color: red;font-size:3rem;line-height: 2rem;\">💖</span>\n<img src=\"public/app/plugins/datasource/prometheus/img/prometheus_logo.svg\" alt=\"Prometheus logo\" style=\"height: 60px;\">\n</center>",
             "id": 16,
             "links": [],
             "mode": "html",
