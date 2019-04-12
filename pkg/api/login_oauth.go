@@ -52,7 +52,8 @@ func (hs *HTTPServer) OAuthLogin(ctx *m.ReqContext) {
 	if errorParam != "" {
 		errorDesc := ctx.Query("error_description")
 		oauthLogger.Error("failed to login ", "error", errorParam, "errorDesc", errorDesc)
-		hs.redirectWithError(ctx, login.ErrProviderDeniedRequest, "error", errorParam, "errorDesc", errorDesc)
+		fullError := fmt.Errorf("%s: %s", login.ErrProviderDeniedRequest, errorDesc)
+		hs.redirectWithError(ctx, fullError, "error", errorParam, "errorDesc", errorDesc)
 		return
 	}
 
