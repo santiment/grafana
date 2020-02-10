@@ -1,5 +1,4 @@
 import React, { FC } from 'react';
-import config from 'app/core/config';
 
 export interface FooterLink {
   text: string;
