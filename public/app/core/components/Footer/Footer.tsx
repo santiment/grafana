@@ -1,4 +1,5 @@
 import React, { FC } from 'react';
+import config from 'app/core/config';
 
 export interface FooterLink {
   text: string;
@@ -28,6 +29,26 @@ export let getFooterLinks = (): FooterLink[] => {
       target: '_blank',
     },
   ];
+};
+
+export let getVersionLinks = (): FooterLink[] => {
+  const { buildInfo, licenseInfo } = config;
+  const links: FooterLink[] = [];
+  const stateInfo = licenseInfo.stateInfo ? ` (${licenseInfo.stateInfo})` : '';
+
+  links.push({ text: `${buildInfo.edition}${stateInfo}`, url: licenseInfo.licenseUrl });
+  links.push({ text: `v${buildInfo.version} (${buildInfo.commit})` });
+
+  if (buildInfo.hasUpdate) {
+    links.push({
+      text: `New version available!`,
+      icon: 'fa fa-download',
+      url: 'https://grafana.com/grafana/download?utm_source=grafana_footer',
+      target: '_blank',
+    });
+  }
+
+  return links;
 };
 
 export function setFooterLinksFn(fn: typeof getFooterLinks) {
