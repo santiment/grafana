@@ -31,12 +31,6 @@ export let getFooterLinks = (): FooterLink[] => {
   ];
 };
 
-export let getVersionLinks = (): FooterLink[] => {
-  const { buildInfo, licenseInfo } = config;
-  const links: FooterLink[] = [];
-  const stateInfo = licenseInfo.stateInfo ? ` (${licenseInfo.stateInfo})` : '';
-};
-
 export function setFooterLinksFn(fn: typeof getFooterLinks) {
   getFooterLinks = fn;
 }
