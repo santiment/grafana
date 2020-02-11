@@ -28,6 +28,8 @@ func setDefaultTemplateData(data map[string]interface{}, u *m.User) {
 	data["AppUrl"] = setting.AppUrl
 	data["BuildVersion"] = setting.BuildVersion
 	data["BuildStamp"] = setting.BuildStamp
+	data["SanProduct"] = "SANgraphs"
+	data["SanYear"] = "© 2020"
 	data["EmailCodeValidHours"] = setting.EmailCodeValidMinutes / 60
 	data["Subject"] = map[string]interface{}{}
 	if u != nil {
