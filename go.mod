@@ -24,7 +24,7 @@ require (
 	github.com/davecgh/go-spew v1.1.1
 	github.com/denisenkom/go-mssqldb v0.0.0-20200910202707-1e08a3fab204
 	github.com/facebookgo/inject v0.0.0-20180706035515-f23751cae28b
-	github.com/fatih/color v1.10.0
+	github.com/fatih/color v1.11.0
 	github.com/gchaincl/sqlhooks v1.3.0
 	github.com/getsentry/sentry-go v0.10.0
 	github.com/go-kit/kit v0.10.0
