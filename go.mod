@@ -26,7 +26,7 @@ require (
 	github.com/facebookgo/inject v0.0.0-20180706035515-f23751cae28b
 	github.com/fatih/color v1.10.0
 	github.com/gchaincl/sqlhooks v1.3.0
-	github.com/getsentry/sentry-go v0.10.0
+	github.com/getsentry/sentry-go v0.11.0
 	github.com/go-kit/kit v0.10.0
 	github.com/go-macaron/binding v0.0.0-20190806013118-0b4f37bab25b
 	github.com/go-macaron/gzip v0.0.0-20160222043647-cad1c6580a07
