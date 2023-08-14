@@ -24,7 +24,7 @@ require (
 	github.com/davecgh/go-spew v1.1.1
 	github.com/denisenkom/go-mssqldb v0.0.0-20200910202707-1e08a3fab204
 	github.com/facebookgo/inject v0.0.0-20180706035515-f23751cae28b
-	github.com/fatih/color v1.10.0
+	github.com/fatih/color v1.15.0
 	github.com/gchaincl/sqlhooks v1.3.0
 	github.com/getsentry/sentry-go v0.10.0
 	github.com/go-kit/kit v0.10.0
@@ -58,7 +58,7 @@ require (
 	github.com/lib/pq v1.10.0
 	github.com/linkedin/goavro/v2 v2.10.0
 	github.com/magefile/mage v1.11.0
-	github.com/mattn/go-isatty v0.0.12
+	github.com/mattn/go-isatty v0.0.17
 	github.com/mattn/go-sqlite3 v1.14.6
 	github.com/opentracing/opentracing-go v1.2.0
 	github.com/patrickmn/go-cache v2.1.0+incompatible
